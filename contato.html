@@ -6,22 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <!--Bootstrap e CSS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="_css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!--JavaScript-->
+  <script src="_javaScript/bootstrap.bundle.js"></script>
+  <script src="_javaScript/jquery.js"></script>
+  <!--CSS e Bootstrap-->
+   <link rel="stylesheet" href="_css/style.css" />
+   <link rel="stylesheet" href="_css/bootstrap.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <!-------------------------------------------------------------------------------------------------------------------------->
 <body>
     <header>
-        <!--Navegador-->
-        <nav class="navbar navbar-dark bg-primary">
-            <img class="img" src="_imagens/logo.os.png" alt="chave">
+      <!--Navegador-->
+      <nav class="navbar navbar-dark bg-primary">
+        <!-- Button e imagem modal --> 
+        <div class="float-left">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <img src="_imagens/logo.os.png" class="logo" alt="chave">
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <img src="_imagens/logo.os.png" class="logo" alt="chave">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="_imagens/logo.os.png" class="logo-modal" alt="chave">
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+        <!-------------------------------------------------------------------------------------------------->
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group me-2" role="group" aria-label="First group">
                     <button type="button" class="btn btn-primary">Menu</button>
